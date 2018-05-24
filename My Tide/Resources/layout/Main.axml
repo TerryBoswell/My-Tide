@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+    <TableRow>
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </TableRow>
+    <TableRow>
+        <Spinner
+            android:id="@+id/spinner1" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="High Tides:"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:textSize="12pt"
+            android:id="@+id/highTideLabel" />
+    </TableRow>
+    <TableRow>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:text=""
+                    android:textColor="#1e8c22"
+                    android:paddingLeft="10dp"
+                    android:textSize="12pt"
+                    android:id="@+id/highTide1" />
+                <TextView
+                    android:text=""
+                    android:textColor="#1e8c22"
+                    android:textSize="12pt"
+                    android:id="@+id/highTide2" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Low Tides:"
+            android:paddingLeft="3dp"
+            android:textSize="12pt"
+            android:id="@+id/lowTideLabel" />
+    </TableRow>
+    <TableRow>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:text=""
+                    android:textColor="#1e8c22"
+                    android:paddingLeft="10dp"
+                    android:textSize="12pt"
+                    android:id="@+id/lowTide1" />
+                <TextView
+                    android:text=""
+                    android:textColor="#1e8c22"
+                    android:textSize="12pt"
+                    android:id="@+id/lowTide2" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Sun:"
+            android:paddingLeft="3dp"
+            android:textSize="12pt"
+            android:id="@+id/sunLabel1" />
+    </TableRow>
+    <TableRow>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:text=""
+                    android:textColor="#c17a2e"
+                    android:paddingLeft="10dp"
+                    android:textSize="12pt"
+                    android:id="@+id/sunRise" />
+                <TextView
+                    android:text=""
+                    android:textColor="#c17a2e"
+                    android:textSize="12pt"
+                    android:id="@+id/sunSet" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="15px">
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:id="@+id/datePicker1"
+            android:datePickerMode="spinner" />
+    </TableRow>
+    <TableRow
+        android:minHeight="15px">
+        <Button
+            android:text="Refresh"
+            android:textSize="12pt"
+            android:id="@+id/RefreshButton" />
+    </TableRow>
+</TableLayout>

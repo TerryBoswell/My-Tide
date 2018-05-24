@@ -1,0 +1,2 @@
+android.app.Application
+My_Tide.My_Tide
