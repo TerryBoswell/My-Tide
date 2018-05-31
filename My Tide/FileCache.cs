@@ -43,6 +43,13 @@ namespace Core
             
         }
 
+        public static void ClearDailyData(DateTime today, Location location)
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string filename = Path.Combine(path, getDocId(today, location));
+            if (File.Exists(filename))
+                File.Delete(filename);
+        }
 
         public static DailyData GetDailyData(DateTime today, Location location)
         {

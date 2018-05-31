@@ -5,6 +5,6 @@
     <!-- Customizations go here -->
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
-    <item name="android:colorPrimary">#2e5cb8</item>  
+    <item name="android:colorPrimary">#2e5cb8</item>    
   </style>
 </resources>

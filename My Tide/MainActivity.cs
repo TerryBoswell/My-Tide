@@ -25,7 +25,7 @@ namespace My_Tide
         private TextView highTideLabel;
         private Spinner spinner;
         private Core.TideData.Location location;
-
+        private float textSizeForTides = 35;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -68,8 +68,14 @@ namespace My_Tide
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            Toast.MakeText(this, "Action selected: " + item.ItemId,
-                ToastLength.Short).Show();
+            if (item.ItemId == Resource.Id.menu_clearcache)
+            {
+                var now = datePicker.DateTime;
+                Task<Core.DailyData> loadTask = Core.TideData.LoadTideData(now, location);
+            }
+
+            //Toast.MakeText(this, "Action selected: " + item.ItemId,
+            //    ToastLength.Short).Show();
             return base.OnOptionsItemSelected(item);
         }
 

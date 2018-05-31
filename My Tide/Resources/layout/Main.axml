@@ -10,7 +10,10 @@
     </TableRow>
     <TableRow>
         <Spinner
-            android:id="@+id/spinner1" />
+            android:paddingTop="10dp"
+            android:id="@+id/spinner1"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp" />
     </TableRow>
     <TableRow>
         <TextView
@@ -30,12 +33,12 @@
                     android:text=""
                     android:textColor="#1e8c22"
                     android:paddingLeft="10dp"
-                    android:textSize="12pt"
+                    android:textSize="14pt"
                     android:id="@+id/highTide1" />
                 <TextView
                     android:text=""
                     android:textColor="#1e8c22"
-                    android:textSize="12pt"
+                    android:textSize="14pt"
                     android:id="@+id/highTide2" />
             </TableRow>
         </TableLayout>
@@ -57,12 +60,12 @@
                     android:text=""
                     android:textColor="#1e8c22"
                     android:paddingLeft="10dp"
-                    android:textSize="12pt"
+                    android:textSize="14pt"
                     android:id="@+id/lowTide1" />
                 <TextView
                     android:text=""
                     android:textColor="#1e8c22"
-                    android:textSize="12pt"
+                    android:textSize="14pt"
                     android:id="@+id/lowTide2" />
             </TableRow>
         </TableLayout>
